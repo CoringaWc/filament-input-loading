@@ -12,6 +12,12 @@
         "fun"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/CoringaWc/filament-input-loading"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "CoringaWc\\FilamentInputLoading\\": "src/"
