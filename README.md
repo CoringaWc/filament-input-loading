@@ -28,10 +28,6 @@ or
 
 `TextInput::make('input')->debounce()->...`
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
 ## Credits
 
 - [CoringaWc](https://github.com/coringawc)
