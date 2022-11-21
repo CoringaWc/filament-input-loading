@@ -1,6 +1,6 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/coringawc/filament-input-loading.svg?style=flat-square)](https://packagist.org/packages/coringawc/filament-input-loading)
 [![Semantic Release](https://github.com/coringawc/filament-input-loading/actions/workflows/release.yml/badge.svg)](https://github.com/coringawc/filament-input-loading/actions/workflows/release.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/coringawc/filament-input-loading.svg?style=flat-square)](https://packagist.org/packagescoringawc/filament-input-loading)
+[![Total Downloads](https://img.shields.io/packagist/dt/coringawc/filament-input-loading.svg?style=flat-square)](https://packagist.org/packages/coringawc/filament-input-loading)
 
 # Filament Input Loading
 
