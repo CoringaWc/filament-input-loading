@@ -32,6 +32,8 @@ RUN groupadd -g "${WWWGROUP}" workbench \
 
 USER workbench
 
+RUN mkdir -p /tmp/composer/cache /tmp/.npm /tmp/.cache
+
 WORKDIR /var/www/html
 
 COPY --chmod=755 entrypoint.sh /usr/local/bin/plugin-workbench-entrypoint

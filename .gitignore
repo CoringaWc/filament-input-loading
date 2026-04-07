@@ -32,3 +32,4 @@ docker-compose.yml
 *.cache
 phpstan.neon
 VERSION.txt
+package-lock.json

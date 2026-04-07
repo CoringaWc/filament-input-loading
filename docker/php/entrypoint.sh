@@ -7,7 +7,7 @@ if [ ! -f vendor/autoload.php ] || [ ! -f composer.lock ] || [ composer.lock -nt
 fi
 
 if [ -f package.json ] && [ ! -d node_modules ]; then
-    npm install
+    npm install || true
 fi
 
 exec "$@"

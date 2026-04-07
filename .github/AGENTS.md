@@ -31,7 +31,7 @@ packages/workbench/                    # Git submodule: coringawc/filament-plugi
 
 **TextInput.php** — Minimal class that extends `Filament\Forms\Components\TextInput` and points to a custom Blade view. No additional PHP logic; the entire feature is in the template.
 
-**FilamentInputLoadingProvider.php** — Standard Spatie Laravel Package Tools provider. Registers the package name (`filament-input-loading`) and publishes Blade views under the `filament-input-loading::` namespace.
+**FilamentInputLoadingProvider.php** — Standard Spatie `PackageServiceProvider`. Registers the package name (`filament-input-loading`) and publishes Blade views under the `filament-input-loading::` namespace. Originally extended `Filament\PluginServiceProvider` (from `filament/filament` admin panel), but was corrected to extend `Spatie\LaravelPackageTools\PackageServiceProvider` since this plugin only depends on `filament/forms`.
 
 **text-input.blade.php** — Copy of Filament v2's original `text-input.blade.php` with one addition: a `<x-filament-support::loading-indicator>` wrapped in `wire:loading` directives (lines 82-94). This indicator:
 
