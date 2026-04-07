@@ -6,8 +6,6 @@
 /.gitattributes     export-ignore
 /.gitmodules        export-ignore
 /.releaserc         export-ignore
-/package.json       export-ignore
-/tailwind.config.js export-ignore
 /CHANGELOG.md       export-ignore
 /README.md          export-ignore
 /docker             export-ignore

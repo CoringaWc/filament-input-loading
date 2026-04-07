@@ -27,7 +27,7 @@
             "email": "nt_170@hotmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": "^8.0",
         "filament/forms": "^2.9",

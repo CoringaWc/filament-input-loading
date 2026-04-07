@@ -65,9 +65,10 @@ The workbench default image uses PHP 8.4, but Filament v2 requires Laravel 9.x w
 
 ## Compatibility
 
-- **Filament**: v2.x only (uses `PluginServiceProvider`, `filament-support::` components, Livewire v2 `$wire.__instance.serverMemo`)
+- **Filament**: v2.x only (uses `filament-support::` components, Livewire v2 `$wire.__instance.serverMemo`)
 - **PHP**: 8.0+
 - **Laravel**: 9.x (via Orchestra Testbench ^7)
+- **minimum-stability**: `stable` (with `prefer-stable: true`)
 
 ## Known Technical Debt
 

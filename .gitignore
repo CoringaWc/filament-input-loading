@@ -16,9 +16,6 @@ Thumbs.db
 # Auth
 auth.json
 
-# Build
-/dist/
-
 # Testing
 .phpunit.result.cache
 .phpstan.cache/

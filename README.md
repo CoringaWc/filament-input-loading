@@ -10,7 +10,7 @@ A Filament Forms plugin that adds a **loading spinner** to `TextInput` fields wh
 
 ## Screenshots
 
-![Loading spinner inside a debounced text input](./screenshots/exemple.png)
+![Loading spinner inside a debounced text input](./screenshots/example.png)
 
 ## Installation
 
