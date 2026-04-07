@@ -1,0 +1,11 @@
+# Filament Input Loading
+
+/.github            export-ignore
+/screenshots        export-ignore
+/.gitignore         export-ignore
+/.gitattributes     export-ignore
+/.releaserc         export-ignore
+/package.json       export-ignore
+/tailwind.config.js export-ignore
+/CHANGELOG.md       export-ignore
+/README.md          export-ignore

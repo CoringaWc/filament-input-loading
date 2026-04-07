@@ -37,4 +37,4 @@ jobs:
             @semantic-release/exec
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SEMANTIC_RELEASE_PACKAGE: Filament Feed
+          SEMANTIC_RELEASE_PACKAGE: Filament Input Loading

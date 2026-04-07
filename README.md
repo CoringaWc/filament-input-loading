@@ -4,11 +4,13 @@
 
 # Filament Input Loading
 
-Input with option of spinner loading utilizing the 'lazy()' or 'debounce()' methods
+A Filament Forms plugin that adds a **loading spinner** to `TextInput` fields when using Livewire's `lazy()` or `debounce()` binding modifiers. The spinner appears inside the input field while the server processes the update, giving users visual feedback.
+
+> **⚠️ Compatibility:** This plugin is built for **Filament v2** (with Livewire v2). It is not compatible with Filament v3/v4/v5.
 
 ## Screenshots
 
-![Screenshot of Login Screen](./screenshots/exemple.png)
+![Loading spinner inside a debounced text input](./screenshots/exemple.png)
 
 ## Installation
 
@@ -18,15 +20,29 @@ You can install the package via composer:
 composer require coringawc/filament-input-loading
 ```
 
+The package auto-discovers its service provider — no manual registration needed.
+
 ## Usage
 
-`use CoringaWc\FilamentInputLoading\TextInput;`
+Replace Filament's default `TextInput` import with this package's version:
 
-`TextInput::make('input')->lazy()->...`
+```php
+use CoringaWc\FilamentInputLoading\TextInput;
+```
 
-or
+Then use `lazy()` or `debounce()` as you normally would — the loading spinner appears automatically:
 
-`TextInput::make('input')->debounce()->...`
+```php
+// Spinner appears on blur (when the user leaves the field)
+TextInput::make('name')->lazy()
+
+// Spinner appears after a debounce delay while typing
+TextInput::make('search')->debounce(500)
+```
+
+### How It Works
+
+This package extends `Filament\Forms\Components\TextInput` and overrides its Blade view to inject a `wire:loading` spinner indicator. The spinner is positioned inside the input (right side) and only renders when `isLazy()` or `isDebounced()` returns true.
 
 ## Credits
 

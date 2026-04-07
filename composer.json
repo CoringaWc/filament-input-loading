@@ -3,21 +3,14 @@
     "description": "Input with loading spinner option",
     "keywords": [
         "laravel",
-        "user",
-        "cli",
-        "resource",
-        "ui",
         "filament",
-        "widget",
-        "fun"
+        "forms",
+        "loading",
+        "spinner",
+        "input",
+        "livewire"
     ],
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/CoringaWc/filament-input-loading"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "CoringaWc\\FilamentInputLoading\\": "src/"
