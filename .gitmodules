@@ -1,0 +1,3 @@
+[submodule "packages/workbench"]
+	path = packages/workbench
+	url = https://github.com/CoringaWc/filament-plugin-workbench.git

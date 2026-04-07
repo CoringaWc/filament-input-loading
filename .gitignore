@@ -19,8 +19,16 @@ auth.json
 # Build
 /dist/
 
+# Testing
+.phpunit.result.cache
+.phpstan.cache/
+
+# Workbench / Docker runtime
+testbench.yaml
+docker-compose.yml
+/workbench/
+
 # Misc
 *.cache
-.phpunit.result.cache
 phpstan.neon
 VERSION.txt

@@ -44,6 +44,28 @@ TextInput::make('search')->debounce(500)
 
 This package extends `Filament\Forms\Components\TextInput` and overrides its Blade view to inject a `wire:loading` spinner indicator. The spinner is positioned inside the input (right side) and only renders when `isLazy()` or `isDebounced()` returns true.
 
+## Development
+
+This plugin uses [filament-plugin-workbench](https://github.com/CoringaWc/filament-plugin-workbench) for development. A custom Docker image with PHP 8.1 is used for Filament v2 compatibility.
+
+```bash
+# Clone with submodules
+git clone --recurse-submodules https://github.com/CoringaWc/filament-input-loading.git
+cd filament-input-loading
+
+# Start the development environment
+./packages/workbench/bin/workbench up
+
+# Run tests
+./packages/workbench/bin/sail phpunit
+
+# Static analysis
+./packages/workbench/bin/sail phpstan
+
+# Code style
+./packages/workbench/bin/sail pint
+```
+
 ## Credits
 
 - [CoringaWc](https://github.com/coringawc)

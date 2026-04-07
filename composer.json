@@ -1,42 +1,53 @@
 {
-  "name": "coringawc/filament-input-loading",
-  "description": "Input with loading spinner option",
-  "keywords": [
-    "laravel",
-    "filament",
-    "forms",
-    "loading",
-    "spinner",
-    "input",
-    "livewire"
-  ],
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "CoringaWc\\FilamentInputLoading\\": "src/"
-    }
-  },
-  "authors": [
-    {
-      "name": "Argemiro D Neto",
-      "email": "nt_170@hotmail.com"
-    }
-  ],
-  "minimum-stability": "dev",
-  "require": {
-    "php": "^8.0",
-    "filament/forms": "^2.9",
-    "spatie/laravel-package-tools": "^1.10"
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "CoringaWc\\FilamentInputLoading\\FilamentInputLoadingProvider"
-      ]
-    }
-  },
-  "prefer-stable": true
+    "name": "coringawc/filament-input-loading",
+    "description": "Input with loading spinner option",
+    "keywords": [
+        "laravel",
+        "filament",
+        "forms",
+        "loading",
+        "spinner",
+        "input",
+        "livewire"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CoringaWc\\FilamentInputLoading\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CoringaWc\\FilamentInputLoading\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Argemiro D Neto",
+            "email": "nt_170@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "filament/forms": "^2.9",
+        "spatie/laravel-package-tools": "^1.10"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^7.0",
+        "phpstan/phpstan": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CoringaWc\\FilamentInputLoading\\FilamentInputLoadingProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
 }
